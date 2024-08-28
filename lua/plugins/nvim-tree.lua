@@ -15,7 +15,9 @@ return {
     lazy = false,
 
     dependencies = {
-	"nvim-tree/nvim-web-devicons"
+        "nvim-tree/nvim-web-devicons",
+        "MunifTanjim/nui.nvim",
+		"nvim-lua/plenary.nvim",
     },
 
     opts = {

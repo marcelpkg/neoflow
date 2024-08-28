@@ -1,13 +1,16 @@
 return {
     "nvim-telescope/telescope.nvim",
     lazy = false,
+    dependencies = {
+        'nvim-telescope/telescope-ui-select.nvim',
+    },
     opts = function()
         local telescope_path = vim.fn.stdpath("data") .. "/lazy/telescope.nvim"
 
         if vim.loop.fs_stat(telescope_path) then
             vim.opt.rtp:prepend(telescope_path)
         end
-        
+
         local builtin = require("telescope.builtin")
 
         vim.keymap.set('n', '<leader>ff', builtin.find_files, {})
@@ -30,11 +33,18 @@ return {
             },
             pickers = {
                 find_files = {}
+            },
+
+            extensions = {
+                ["ui-select"] = {
+                    require("telescope.themes").get_dropdown({}),
+                },
             }
         }
     end,
     config = function(_, opts)
         require('telescope').setup(opts)
+        require("telescope").load_extension("ui-select")
     end
 }
 

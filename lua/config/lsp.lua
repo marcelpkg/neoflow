@@ -4,7 +4,7 @@ local M = {
         "lua_ls",
         "clangd",
         "gopls",
-    }
+    },
 
     -- List of languages to install syntax highlighting for
     tree_install {
@@ -12,5 +12,7 @@ local M = {
         "c",
         "go",
         "python",
-    }
+    },
 }
+
+return M
