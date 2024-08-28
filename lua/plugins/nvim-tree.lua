@@ -1,3 +1,4 @@
+
 local function toggle_tree()
     local api = require("nvim-tree.api")
     local view = require("nvim-tree.view")
@@ -19,11 +20,7 @@ return {
 
     opts = {
         view = {
-            width = 30,
+            width = 34,
         },
-    },
-
-    keys = {
-        { "<leader>ft", toggle_tree, { noremap = true, silent = true } }
     },
 }
