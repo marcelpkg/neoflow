@@ -26,6 +26,9 @@ map.set("n", "<C-l>", "<C-w>l", opts) -- Right
 -- Nvim Tree
 map.set("n", "<leader>e", ":NvimTreeToggle<CR>", opts)
 
+-- Neogit
+map.set("n", "<leader>git", "Neogit<CR>", opts)
+
 -- Formatting
 vim.keymap.set("n", "<leader>gf", vim.lsp.buf.format, {})
 
