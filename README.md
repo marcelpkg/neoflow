@@ -11,7 +11,7 @@ A neovim configuration built from the ground-up designed to be modular and easil
 
 ***(NOTE)*** *Make sure a Neovim configuration doesn't already exist. If it does, delete it, unless you know what you are doing.*
 ```bash
-$ git clone https://github.com/marcelpkg/neoflow ~/.config/nvim
+$ git clone https://github.com/marcelpkg/neoflow.git ~/.config/nvim
 ```
 
 ## Contributing
