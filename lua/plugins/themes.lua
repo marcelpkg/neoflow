@@ -9,6 +9,7 @@ return {
         "shaunsingh/moonlight.nvim",
         "scottmckendry/cyberdream.nvim",
         {'bluz71/vim-moonfly-colors', name = "moonfly"},
+        "nyoom-engineering/oxocarbon.nvim",
     },
 
     opts = {
@@ -22,6 +23,7 @@ return {
             "moonlight",
             "cyberdream",
             "moonfly",
+            "oxocarbon",
         },
         livePreview = true,
     }
