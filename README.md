@@ -10,9 +10,9 @@ A neovim configuration built from the ground-up designed to be modular and easil
 **Linux**
 
 ***(NOTE)*** *Make sure a Neovim configuration doesn't already exist. If it does, delete it, unless you know what you are doing.*
-\`\`\`bash
+```bash
 $ git clone https://github.com/marcelpkg/neoflow ~/.config/nvim
-\`\`\`
+```
 
 ## Base plugins
 - [alpha-nvim](https://github.com/goolord/alpha-nvim)
