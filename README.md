@@ -18,4 +18,4 @@ $ git clone https://github.com/marcelpkg/neoflow.git ~/.config/nvim
 
 neoflow is open source and open for contributions.
 
-If you want to improve this plugin, or have a fork with improvements, please open a PR!
+If you want to improve this configuration, or have a fork with improvements, please open a PR!
