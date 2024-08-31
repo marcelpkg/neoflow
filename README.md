@@ -1,6 +1,6 @@
 # neoflow
 [![Neovim](https://img.shields.io/badge/Neovim-57A143?logo=neovim&logoColor=fff)](#)
-![GitHub License](https://img.shields.io/github/license/mpschorr/GenKore)
+![GitHub License](https://img.shields.io/github/license/marcelpkg/neoflow)
 ![GitHub Repo stars](https://img.shields.io/github/stars/marcelpkg/neoflow)
 
 A neovim configuration built from the ground-up designed to be modular and easily extensible.
