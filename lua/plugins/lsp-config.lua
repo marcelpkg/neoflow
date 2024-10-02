@@ -6,7 +6,12 @@ return {
     {
         "williamboman/mason-lspconfig.nvim",
         opts = {
-            auto_install = true,
+            ensure_installed = {
+                "lua_ls",
+                "gopls",
+                "typescript-language-server",
+                "yaml-language-server",
+            },
         },
     },
     {
@@ -15,7 +20,7 @@ return {
             local lspconfig = require("lspconfig")
             lspconfig.lua_ls.setup({})
             lspconfig.gopls.setup({})
-            lspconfig.tsserver.setup({})
+            lspconfig.ts_ls.setup({})
             lspconfig.yamlls.setup({})
         end
     }
