@@ -1,4 +1,8 @@
 return {
     'rcarriga/nvim-notify',
-    opts = {}
+    opts = {
+        stages = "slide",
+        render = "minimal",
+        fps = 240,
+    },
 }
