@@ -9,8 +9,6 @@ return {
             ensure_installed = {
                 "lua_ls",
                 "gopls",
-                "typescript-language-server",
-                "yaml-language-server",
             },
         },
     },

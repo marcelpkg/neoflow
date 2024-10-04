@@ -9,6 +9,9 @@ return {
                 delay = 200,
                 reveal = {'close'}
             },
+            lsp = {
+                show_problem_count = true,
+            }
         },
     },
 }
