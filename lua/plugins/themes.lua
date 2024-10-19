@@ -15,14 +15,6 @@ return {
         'ribru17/bamboo.nvim',
         "atmosuwiryo/vim-winteriscoming",
         { "rose-pine/neovim", name = "rose-pine" },
-        {
-            "oncomouse/lushwal.nvim",
-            cmd = { "LushwalCompile" },
-            dependencies = {
-                { "rktjmp/lush.nvim" },
-                { "rktjmp/shipwright.nvim" },
-        },
-    }
     },
 
     opts = {
@@ -41,9 +33,9 @@ return {
             "poimandres",
             "ayu",
             "bamboo",
-            "lushwal",
             "WinterIsComing-dark-blue-color-theme",
         },
         livePreview = true,
     }
 }
+
