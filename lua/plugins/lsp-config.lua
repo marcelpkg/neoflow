@@ -44,7 +44,6 @@ return {
                   }
                 })
             })
-            lspconfig.ts_ls.setup({})
             lspconfig.yamlls.setup({})
 
             lspconfig.denols.setup({
