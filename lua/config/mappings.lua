@@ -14,6 +14,10 @@ local opts = { noremap = true, silent = true }
 -- Keybinds
 vb.mapleader = " "
 
+-- Color Picker
+vim.keymap.set("n", "<leader>ph", function() require("minty.huefy").open() end, { desc = "Open Minty Huefy" })
+vim.keymap.set("n", "<leader>ps", function() require("minty.shades").open() end, { desc = "Open Minty Shades" })
+
 -- Theme Switcher
 map.set("n", "<leader>th", ":Themery<CR>", opts)
 
@@ -41,7 +45,7 @@ map.set("n", "<C-l>", "<C-w>l", opts) -- Right
 map.set("n", "<leader>e", ":NvimTreeToggle<CR>", opts)
 
 -- Neogit
-map.set("n", "<leader>gh", "Neogit<CR>", opts)
+map.set("n", "<leader>gh", ":Neogit<CR>", opts)
 
 -- Formatting
 vim.keymap.set("n", "<leader>gf", vim.lsp.buf.format, {})

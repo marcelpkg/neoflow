@@ -13,6 +13,16 @@ return {
         'nyoom-engineering/oxocarbon.nvim',
         'Shatur/neovim-ayu',
         'ribru17/bamboo.nvim',
+        "atmosuwiryo/vim-winteriscoming",
+        { "rose-pine/neovim", name = "rose-pine" },
+        {
+            "oncomouse/lushwal.nvim",
+            cmd = { "LushwalCompile" },
+            dependencies = {
+                { "rktjmp/lush.nvim" },
+                { "rktjmp/shipwright.nvim" },
+        },
+    }
     },
 
     opts = {
@@ -23,6 +33,7 @@ return {
             "tokyonight-night",
             "kanagawa-wave",
             "kanagawa-dragon",
+            "rose-pine",
             "moonlight",
             "cyberdream",
             "moonfly",
@@ -30,6 +41,8 @@ return {
             "poimandres",
             "ayu",
             "bamboo",
+            "lushwal",
+            "WinterIsComing-dark-blue-color-theme",
         },
         livePreview = true,
     }
