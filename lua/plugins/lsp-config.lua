@@ -9,6 +9,7 @@ return {
             ensure_installed = {
                 "lua_ls",
                 "gopls",
+                "denols",
             },
         },
     },
@@ -16,10 +17,50 @@ return {
         "neovim/nvim-lspconfig",
         config = function()
             local lspconfig = require("lspconfig")
-            lspconfig.lua_ls.setup({})
-            lspconfig.gopls.setup({})
+            lspconfig.lua_ls.setup({
+                settings = {
+                    Lua = {
+                        hint = {
+                            enable = true, -- necessary
+                        }
+                    }
+                }
+            })
+
+            lspconfig.gopls.setup({
+                require("lspconfig").gopls.setup({
+                  settings = {
+                    gopls = {
+                      hints = {
+                        rangeVariableTypes = true,
+                        parameterNames = true,
+                        constantValues = true,
+                        assignVariableTypes = true,
+                        compositeLiteralFields = true,
+                        compositeLiteralTypes = true,
+                        functionTypeParameters = true,
+                      },
+                    }
+                  }
+                })
+            })
             lspconfig.ts_ls.setup({})
             lspconfig.yamlls.setup({})
+
+            lspconfig.denols.setup({
+                  settings = {
+                    deno = {
+                      inlayHints = {
+                        parameterNames = { enabled = "all", suppressWhenArgumentMatchesName = true },
+                        parameterTypes = { enabled = true },
+                        variableTypes = { enabled = true, suppressWhenTypeMatchesName = true },
+                        propertyDeclarationTypes = { enabled = true },
+                        functionLikeReturnTypes = { enable = true },
+                        enumMemberValues = { enabled = true },
+                      },
+                    }
+                  }
+                })
         end
     }
 }
