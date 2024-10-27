@@ -13,7 +13,6 @@ return {
         'nyoom-engineering/oxocarbon.nvim',
         'Shatur/neovim-ayu',
         'ribru17/bamboo.nvim',
-        "atmosuwiryo/vim-winteriscoming",
         { "rose-pine/neovim", name = "rose-pine" },
     },
 
@@ -33,7 +32,7 @@ return {
             "poimandres",
             "ayu",
             "bamboo",
-            "WinterIsComing-dark-blue-color-theme",
+            "carbonfox",
         },
         livePreview = true,
     }
